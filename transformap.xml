@@ -61,6 +61,7 @@
 </item>
 <item name="Self-description of a community" de.name="Selbstbeschreibung/Zugehörigkeit" type="node,way,relation" >
 	<label text="Self-description of a community" de.text="Selbstbeschreibung/Zugehörigkeit" />
+    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Self-description_of_a_community" />
   <space />
 
   <check key="political_identity:solidarity_economy"  text="solidarity economy" de.text="Solidarische Ökonomie" />
@@ -77,6 +78,7 @@
 
 <item name="Mode of Interaction" de.name="Art der Interaktion" type="node,way,relation" >
 	<label text="Mode of Interaction" de.text="Art der Interaktion" />
+    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Interaction" />
   <space />
 
   <check key="mode_of_interaction:bartering"  text="by way of bartering" de.text="tauschen" />
@@ -90,6 +92,7 @@
 
 <item name="Mode of Production" de.name="Art der Produktion" type="node,way,relation" >
 	<label text="Mode of Production" de.text="Art der Produktion" />
+    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Production" />
   <space />
 
   <check key="mode_of_production:commons_based_p2p_production"  text="P2P" de.text="P2P" />
@@ -101,6 +104,7 @@
 
 <item name="Knowledge and Resource Management" type="node,way,relation" >
 	<label text="Knowledge and Resource Management" />
+    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Knowledge_and_Resource_Management" />
   <space />
 	<label text="Knowledge" />
   <space />
@@ -140,6 +144,7 @@
 
 <item name="Mode of Organization" de.name="Organisationsform" type="node,way,relation" >
 	<label text="Mode of Organization" de.text="Organisationsform" />
+    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Organization" />
   <space />
 
   <text key="mode_of_organization:ownership_structure" text="mode of ownership" de.text="Eigentümerstruktur" delete_if_empty="true" />
@@ -154,6 +159,7 @@
   <text key="mode_of_organization:cooperation" text="cooperation with" de.text="Kooperation mit" delete_if_empty="true" />
 
 </item>
+<separator/>
 <item name="Contact data" de.name="Kontaktdaten" type="node,way,relation" >
 	<label text="Contact data" de.text="Kontaktdaten" />
   <space />
