@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.4" 
+		 version="0.5" 
 		 shortdescription="Preset for project Transformap" 
 		 de.shortdescription="Eingabemasken für Projekt Transformap" 
 		 description="Presets covering all the proposed tags for project Transformap" 
@@ -147,7 +147,7 @@
     <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Organization" />
   <space />
 
-  <text key="mode_of_organization:ownership_structure" text="mode of ownership" de.text="Eigentümerstruktur" delete_if_empty="true" />
+  <text key="mode_of_organization:ownership_structure" text="mode of ownership (free text)" de.text="Eigentümerstruktur (Freitext)" delete_if_empty="true" />
   <combo key="mode_of_organization:purpose" text="for profit or for benefit" de.text="Gewinn oder Gemeinwohl" values="non_profit,not_for_private_profit,for_members" delete_if_empty="true" /> 
   <check key="mode_of_organization:self_managed"  text="self managed" de.text="selbstverwaltet" />
   <combo key="mode_of_organization:decision_making" text="decision making" de.text="Entscheidungsfindung" values="by_consensus,by_vote,..." delete_if_empty="true" /> 
