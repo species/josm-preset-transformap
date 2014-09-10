@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.2" 
+		 version="0.4" 
 		 shortdescription="Preset for project Transformap" 
 		 de.shortdescription="Eingabemasken für Projekt Transformap" 
 		 description="Presets covering all the proposed tags for project Transformap" 
@@ -10,7 +10,7 @@
          <group name="Transformap" >
              <item name="Needs fullfilled by a community" de.name="Bedürfnisse" type="node,way,relation" >
   <text key="name" text="name (required!)" de.text="Name (Pflicht!)" delete_if_empty="true" />
-  <text key="description" text="description (optinal)" de.text="Beschreibung (optional)" delete_if_empty="true" />
+  <text key="description" text="description (optional)" de.text="Beschreibung (optional)" delete_if_empty="true" />
   <text key="operator" text="operator" de.text="Name des Betreibers" delete_if_empty="true" />
   <space/>
   <text key="addr:country" text="addr:country" de.text="Addr:Staatenkuerzel" delete_if_empty="true" />
@@ -20,6 +20,7 @@
   <text key="addr:housenumber" text="addr:housenumber" de.text="Addr:Hausnummer" delete_if_empty="true" />
   <space/>
 	<label text="Needs fullfilled by a community:" de.text="Bedürfnisse:" />
+    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Needs_fullfilled_by_a_community" />
   <space />
 
                  <!-- fullfills_needs: all yes/no \land
