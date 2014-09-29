@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.5" 
+		 version="0.6" 
 		 shortdescription="Preset for project Transformap" 
 		 de.shortdescription="Eingabemasken für Projekt Transformap" 
 		 description="Presets covering all the proposed tags for project Transformap" 
          de.description="Eingabemasken alle Vorgeschlagenen Tags für das Projekt Transformap"
          url="http://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap">
+
+         <chunk id="link_contact_transformap">
+             <preset_link preset_name="Contact Data" />
+         </chunk>
+
+         <chunk id="link_diet_transformap">
+             <preset_link preset_name="Diet options" />
+         </chunk>
+
+         <chunk id="link_payment_transformap">
+             <preset_link preset_name="Payment options" />
+         </chunk>
+
          <group name="Transformap" >
 <item name="Common Tags" de.name="Allgemeine Eigenschaften" type="node,way,relation,closedway" >
-	<label text="Common Tags" de.text="Allgemeine Eigenschaften" />
+	<label text="Common tags for all Transformap-objects" de.text="Allgemeine Eigenschaften für alle Transformap-Objekte" />
   <space />
   <text key="name" text="name (required!)" de.text="Name (Pflicht!)" delete_if_empty="true" />
   <text key="description" text="description (optional)" de.text="Beschreibung (optional)" delete_if_empty="true" />
@@ -25,20 +38,30 @@
   <text key="addr:housenumber" text="addr:housenumber" de.text="Addr:Hausnummer" delete_if_empty="true" />
   <space/>
   <text key="start_date" text="start date" de.text="Gründungsjahr/Zeitpunkt" delete_if_empty="true" />
-  <combo key="fee"  text="is a fee charged?" de.text="Kostet die Nutzung etwas? (optional)" values="yes,no" delete_if_empty="true" />
-  <combo key="access"  text="access (simple)" de.text="Zugang Öffentlich oder Privat?" values="public,private" delete_if_empty="true" />
+  <combo key="fee"  text="is a fee charged?" de.text="Kostet die Nutzung etwas? (optional)" values="yes,no" de.display_values="Ja,Nein" delete_if_empty="true" />
+  <combo key="access"  text="access (simple)" de.text="Zugang Öffentlich oder Privat?" values="public,private" de.display_values="Öffentlich,Privat" delete_if_empty="true" />
   <space/>
-  <combo key="wheelchair"  text="wheelchair (simple)" de.text="Rollstuhlgeeignet?" values="yes,limited,no,designated" delete_if_empty="true" />
-  <combo key="smoking"  text="smoking" de.text="Rauchen erlaubt?" values="yes,no,isolated,separated" de.display_values="Ja,Nein,Gut getrennt,Schlecht getrennt" delete_if_empty="true" />
+  <combo key="wheelchair"  text="wheelchair (simple)" de.text="Rollstuhlgeeignet?" values="yes,limited,no,designated" de.display_values="Ja,Eingeschränkt,Nein,Hauptzielgruppe Rollis" delete_if_empty="true"  />
+  <text key="wheelchair:description" text="optional description for wheelchair" de.text="optionale Beschreibung für Rollstuhlfahrer" delete_if_empty="true" />
+  <space/>
+  <combo key="smoking"  text="smoking" de.text="Rauchen erlaubt?" values="yes,no,isolated,separated" de.display_values="Ja,Nein,Gut getrennt,Schlecht getrennt" delete_if_empty="true"  />
   <combo key="smoking:outside"  text="smoking outside" de.text="Rauchen draußen erlaubt?" values="yes,no" de.display_values="Ja,Nein" delete_if_empty="true" />
-  <combo key="internet_access"  text="is there Internet access" de.text="Gibt es dort Internetzugang?"  delete_if_empty="true" />
-  <combo key="internet_access:fee"  text="fee for Internet access?" de.text="Internetzugang kostenlos?"  delete_if_empty="true" />
+  <space/>
+  <combo key="internet_access"  text="is there Internet access" de.text="Gibt es dort Internetzugang?" values="yes,no,wlan,terminal,wired" de.display_values="Ja,Nein,WLAN,Kiosk,LAN-Anschlüsse" delete_if_empty="true"  />
+  <combo key="internet_access:fee"  text="fee for Internet access?" de.text="Internetzugang kostenlos?" values="yes,no" de.display_values="Ja,Nein"  delete_if_empty="true" />
+  <space/>
+        <combo key="organic" text="organic" de.text="Angebot Biologisch:" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+  <space/>
+
+  <reference ref="link_contact_transformap" />
+  <reference ref="link_diet_transformap" />
+  <reference ref="link_payment_transformap" />
 </item>
 <separator/>
              <item name="Needs fullfilled by a community" de.name="Bedürfnisse" type="node,way,relation,closedway" >
   <space/>
 	<label text="Needs fullfilled by a community:" de.text="Bedürfnisse:" />
-    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Needs_fullfilled_by_a_community" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Needs_fullfilled_by_a_community" />
   <space />
 
                  <!-- fullfills_needs: all yes/no \land
@@ -66,7 +89,7 @@
   <check key="fullfills_needs:mobility"  text="provides: mobility" de.text="Bietet: Mobilität" />
   <check key="fullfills_needs:health"  text="provides: health" de.text="Bietet: Gesundheit" />
   <check key="fullfills_needs:culture"  text="provides: culture" de.text="Bietet: Kultur" />
-  <check key="fullfills_needs:safety"  text="provides: safety" de.text="Bietet: Schutz" />
+  <check key="fullfills_needs:sense_of_security"  text="provides: safety" de.text="Bietet: Schutz" />
   <check key="fullfills_needs:housing"  text="provides: housing" de.text="Bietet: Unterkunft" />
   <check key="fullfills_needs:spaces"  text="provides: space" de.text="Bietet: Freiraum" />
   <check key="fullfills_needs:objects_of_utilty"  text="provides: objets_of_utility" de.text="Bietet: Gebrauchsgegenstände" />
@@ -79,7 +102,7 @@
 </item>
 <item name="Self-description of a community" de.name="Selbstbeschreibung/Zugehörigkeit" type="node,way,relation,closedway" >
 	<label text="Self-description of a community" de.text="Selbstbeschreibung/Zugehörigkeit" />
-    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Self-description_of_a_community" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Self-description_of_a_community" />
   <space />
 
   <check key="political_identity:solidarity_economy"  text="solidarity economy" de.text="Solidarische Ökonomie" />
@@ -96,7 +119,7 @@
 
 <item name="Mode of Interaction" de.name="Art der Interaktion" type="node,way,relation,closedway" >
 	<label text="Mode of Interaction" de.text="Art der Interaktion" />
-    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Interaction" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Interaction" />
   <space />
 
   <check key="mode_of_interaction:bartering"  text="by way of bartering" de.text="tauschen" />
@@ -104,13 +127,13 @@
   <check key="mode_of_interaction:renting"  text="by way of renting" de.text="mieten" />
   <check key="mode_of_interaction:gifting"  text="by way of gifting" de.text="verschenken" />
   <check key="mode_of_interaction:rebuying_reselling"  text="by way of rebuying &amp; reselling" de.text="weiter(ver)kaufen" />
-  <check key="mode_of_interaction:co-housing_sharing"  text="by way of co-housing &amp; sharing" de.text="teilen" />
+  <check key="mode_of_interaction:cousing_sharing"  text="by way of co-using &amp; sharing" de.text="teilen" />
   <check key="mode_of_interaction:donations"  text="by way of donations" de.text="freiwillige Spende" />
 </item>
 
 <item name="Mode of Production" de.name="Art der Produktion" type="node,way,relation,closedway" >
 	<label text="Mode of Production" de.text="Art der Produktion" />
-    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Production" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Production" />
   <space />
 
   <check key="mode_of_production:commons_based_p2p_production"  text="P2P" de.text="P2P" />
@@ -122,7 +145,7 @@
 
 <item name="Knowledge and Resource Management" type="node,way,relation,closedway" >
 	<label text="Knowledge and Resource Management" />
-    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Knowledge_and_Resource_Management" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Knowledge_and_Resource_Management" />
   <space />
 	<label text="Knowledge" />
   <space />
@@ -154,15 +177,14 @@
   <space />
 
   <check key="production_input:work:ilo_standards" text="ILO standards" de.text="ILO Standards" /> 
-  <check key="production_input:work:equalpay"  text="equalpay" de.text="Gleichbezahlung" />
-  <check key="production_input:work:goodpay"  text="good pay" de.text="Gute Bezahlung" />
+  <combo key="production_input:work:payment" values="good,equal,undisclosed" text="payment" de.text="Bezahlung" de.display_values="gleich/gut/nicht transparent" delete_if_empty="true"  />
   <check key="production_input:work:further_training"  text="further training" de.text="Fortbildung" />
   
 </item>
 
 <item name="Mode of Organization" de.name="Organisationsform" type="node,way,relation,closedway" >
 	<label text="Mode of Organization" de.text="Organisationsform" />
-    <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Organization" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Organization" />
   <space />
 
   <text key="mode_of_organization:ownership_structure" text="mode of ownership (free text)" de.text="Eigentümerstruktur (Freitext)" delete_if_empty="true" />
@@ -170,26 +192,79 @@
   <check key="mode_of_organization:self_managed"  text="self managed" de.text="selbstverwaltet" />
   <combo key="mode_of_organization:decision_making" text="decision making" de.text="Entscheidungsfindung" values="by_consensus,by_vote,..." delete_if_empty="true" /> 
   <combo key="mode_of_organization:members" text="membership" de.text="Mitgliedschaft" values="users,producers,suppliers,affected,open,closed,others" de.display_values="Nutzer,Produzenten,Zulieferer,Betroffene,offen,geschlossen,andere" delete_if_empty="true" /> 
-  <combo key="mode_of_organization:hierarchy_chef" text="hierarchy" de.text="Hierarchie" values="no,yes,elected,flat hierarchy,others" delete_if_empty="true" /> 
+  <combo key="mode_of_organization:hierarchy_chef" text="hierarchy" de.text="Hierarchie" values="no,yes,elected,flat_hierarchy,others" delete_if_empty="true" /> 
   <combo key="mode_of_organization:size" text="size" de.text="Größe" values="by_members_participants,by_users,others" delete_if_empty="true" /> 
   <combo key="mode_of_organization:scale_of_activity" text="scale of activity" de.text="Reichweite" values="local,regional,national,binational,multinational,global" delete_if_empty="true" /> 
   <label text="mode_of_organization:transparency - FIXME key/values to refine" />
-  <text key="mode_of_organization:cooperation" text="cooperation with" de.text="Kooperation mit" delete_if_empty="true" />
 
 </item>
+
 <separator/>
-<item name="Contact data" de.name="Kontaktdaten" type="node,way,relation,closedway" >
+
+<item name="Contact Data" de.name="Kontaktdaten" type="node,way,relation,closedway" >
 	<label text="Contact data" de.text="Kontaktdaten" />
   <space />
-  <text key="contact:name" text="Name of contact persion"  de.text="Name der Kontaktperson"  delete_if_empty="true" />
+  <text key="website" text="website"  de.text="Webseite"  delete_if_empty="true" />
+  <text key="contact:email" text="email"  de.text="Kontak-E-Mail"  delete_if_empty="true" />
+  <space />
+  <text key="contact:name" text="Name of contact person"  de.text="Name der Kontaktperson"  delete_if_empty="true" />
   <text key="contact:phone" text="phone nr."  de.text="Telefonnummer (+49 VORWAHL NUMMER [-durchwahl])"  delete_if_empty="true" />
   <text key="contact:fax" text="fax nr"  de.text="Faxnummer"  delete_if_empty="true" />
-  <text key="contact:email" text="email"  de.text="Kontak-E-Mail"  delete_if_empty="true" />
-  <text key="website" text="website"  de.text="Webseite"  delete_if_empty="true" />
+  <space />
+  <label text="Social media links / usernames" de.text="Soziale Netzwerke" />
+  <space />
   <text key="contact:facebook" text="facebook-page"  de.text="Facebook-Page"  delete_if_empty="true" />
   <text key="contact:twitter" text="twitter"  de.text="Twitter-Username"  delete_if_empty="true" />
   <text key="contact:google_plus" text="G+-page"  de.text="G+-Page"  delete_if_empty="true" />
+</item>
 
+<item name="Diet options" de.name="Diätologische Merkmale" type="node,way,relation,closedway" preset_name_label="true">
+    <link href="http://wiki.openstreetmap.org/wiki/Key:diet"
+        de.href="http://wiki.openstreetmap.org/wiki/DE:Key:diet:*" 
+        text="OSM-Wiki with long descriptions" 
+        de.text="Genaue Beschreibung im OSM-Wiki" />
+  <space />
+        <combo key="diet:vegetarian" text="vegetarian" de.text="Vegetarisch" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:vegan" text="vegan" de.text="Vegan" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:pescetarian" text="pescetarian" de.text="Pescetarisch" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:lacto_vegetarian" text="lacto-vegetarian" de.text="Lacto-Vegetarisch" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:ovo_vegetarian" text="ovo-vegetarian" de.text="Ovo-Vegetarisch" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:fruitarian" text="fruitarian" de.text="Frutarisch" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:raw" text="raw" de.text="Rohkost" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+  <space />
+        <combo key="diet:gluten_free" text="gluten free" de.text="Glutenfrei" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:dairy_free" text="dairy free" de.text="Milchprodukt-frei" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:lactose_free" text="lactose free" de.text="Laktosefrei" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:egg_free" text="egg free" de.text="Eifrei" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:soy_free" text="soy free" de.text="Sojafrei" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:nut_free" text="nut free" de.text="Nußfrei" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+  <space />
+        <combo key="diet:halal" text="halal" de.text="Halal" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="diet:kosher" text="kosher" de.text="Koscher" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+</item>
+
+
+<item name="Payment options" de.name="Bezahlmöglichkeiten" type="node,way,relation,closedway" preset_name_label="true">
+    <space />
+  <check key="payment:bitcoin"  text="Bitcoin" />
+  <check key="payment:litecoin"  text="Litecoin" />
+  <check key="payment:dogecoin"  text="Dogecoin" />
+
+  <space />
+  <check key="payment:none"  text="no payment required" de.text="Leistung Gratis" />
+  <space />
+
+  <check key="payment:cash"  text="Cash" de.text="Bargeld" />
+  <check key="payment:debit_cards"  text="Debit cards" de.text="Bankomatkarten" />
+  <check key="payment:credit_cards"  text="Credit cards" de.text="Kreditkarten" />
+  <space />
+
+
+  <label text="For further possibilities, see" de.text="Für weitere Möglichkeiten, siehe" />
+    <link href="http://wiki.openstreetmap.org/wiki/Key:payment"
+        de.href="http://wiki.openstreetmap.org/wiki/DE:Key:payment" 
+        text="OSM-Wiki with long descriptions" 
+        de.text="Beschreibung im OSM-Wiki" />
 </item>
 
 </group>
