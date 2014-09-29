@@ -31,18 +31,19 @@
   <space/>
 	<label text="opening hours: please use Plugin Menu Data → Edit Opening Hours" de.text="Für Öffnungszeiten bitte das Plugin im Menü Daten → Öffnungszeiten verwenden!" />
   <space/>
-  <text key="addr:country" text="addr:country" de.text="Addr:Staatenkuerzel" delete_if_empty="true" />
-  <text key="addr:postcode" text="addr:postcode" de.text="Addr:PLZ" delete_if_empty="true" />
-  <text key="addr:city" text="addr:city" de.text="Addr:Stadt" delete_if_empty="true" />
-  <text key="addr:street" text="addr:street" de.text="Addr:Strasse" delete_if_empty="true" />
-  <text key="addr:housenumber" text="addr:housenumber" de.text="Addr:Hausnummer" delete_if_empty="true" />
+  <text key="addr:country" text="addr:country" de.text="Adresse:Staatenkürzel" delete_if_empty="true" />
+  <text key="addr:postcode" text="addr:postcode" de.text="Adresse:PLZ" delete_if_empty="true" />
+  <text key="addr:city" text="addr:city" de.text="Adresse:Stadt" delete_if_empty="true" />
+  <text key="addr:street" text="addr:street" de.text="Adresse:Strasse" delete_if_empty="true" />
+  <text key="addr:housenumber" text="addr:housenumber" de.text="Adresse:Hausnummer" delete_if_empty="true" />
   <space/>
+  <optional>
   <text key="start_date" text="start date" de.text="Gründungsjahr/Zeitpunkt" delete_if_empty="true" />
-  <combo key="fee"  text="is a fee charged?" de.text="Kostet die Nutzung etwas? (optional)" values="yes,no" de.display_values="Ja,Nein" delete_if_empty="true" />
+  <combo key="fee"  text="is a fee charged?" de.text="Kostet die Nutzung etwas?" values="yes,no" de.display_values="Ja,Nein" delete_if_empty="true" />
   <combo key="access"  text="access (simple)" de.text="Zugang Öffentlich oder Privat?" values="public,private" de.display_values="Öffentlich,Privat" delete_if_empty="true" />
   <space/>
   <combo key="wheelchair"  text="wheelchair (simple)" de.text="Rollstuhlgeeignet?" values="yes,limited,no,designated" de.display_values="Ja,Eingeschränkt,Nein,Hauptzielgruppe Rollis" delete_if_empty="true"  />
-  <text key="wheelchair:description" text="optional description for wheelchair" de.text="optionale Beschreibung für Rollstuhlfahrer" delete_if_empty="true" />
+  <text key="wheelchair:description" text="additional description for wheelchair" de.text="Zusatzbeschreibung für Rollstuhlfahrer" delete_if_empty="true" />
   <space/>
   <combo key="smoking"  text="smoking" de.text="Rauchen erlaubt?" values="yes,no,isolated,separated" de.display_values="Ja,Nein,Gut getrennt,Schlecht getrennt" delete_if_empty="true"  />
   <combo key="smoking:outside"  text="smoking outside" de.text="Rauchen draußen erlaubt?" values="yes,no" de.display_values="Ja,Nein" delete_if_empty="true" />
@@ -50,8 +51,9 @@
   <combo key="internet_access"  text="is there Internet access" de.text="Gibt es dort Internetzugang?" values="yes,no,wlan,terminal,wired" de.display_values="Ja,Nein,WLAN,Kiosk,LAN-Anschlüsse" delete_if_empty="true"  />
   <combo key="internet_access:fee"  text="fee for Internet access?" de.text="Internetzugang kostenlos?" values="yes,no" de.display_values="Ja,Nein"  delete_if_empty="true" />
   <space/>
-        <combo key="organic" text="organic" de.text="Angebot Biologisch:" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="organic" text="organic" de.text="Angebot Biologisch" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
   <space/>
+  </optional>
 
   <reference ref="link_contact_transformap" />
   <reference ref="link_diet_transformap" />
