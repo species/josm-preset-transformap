@@ -8,16 +8,34 @@
          de.description="Eingabemasken alle Vorgeschlagenen Tags für das Projekt Transformap"
          url="http://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap">
          <group name="Transformap" >
-             <item name="Needs fullfilled by a community" de.name="Bedürfnisse" type="node,way,relation" >
+<item name="Common Tags" de.name="Allgemeine Eigenschaften" type="node,way,relation,closedway" >
+	<label text="Common Tags" de.text="Allgemeine Eigenschaften" />
+  <space />
   <text key="name" text="name (required!)" de.text="Name (Pflicht!)" delete_if_empty="true" />
   <text key="description" text="description (optional)" de.text="Beschreibung (optional)" delete_if_empty="true" />
-  <text key="operator" text="operator" de.text="Name des Betreibers" delete_if_empty="true" />
+  <text key="operator" text="Operator" de.text="Name des Betreibers" delete_if_empty="true" />
+  <text key="owner" text="Owner" de.text="Name des Besitzers" delete_if_empty="true" />
+  <space/>
+	<label text="opening hours: please use Plugin Menu Data → Edit Opening Hours" de.text="Für Öffnungszeiten bitte das Plugin im Menü Daten → Öffnungszeiten verwenden!" />
   <space/>
   <text key="addr:country" text="addr:country" de.text="Addr:Staatenkuerzel" delete_if_empty="true" />
   <text key="addr:postcode" text="addr:postcode" de.text="Addr:PLZ" delete_if_empty="true" />
   <text key="addr:city" text="addr:city" de.text="Addr:Stadt" delete_if_empty="true" />
   <text key="addr:street" text="addr:street" de.text="Addr:Strasse" delete_if_empty="true" />
   <text key="addr:housenumber" text="addr:housenumber" de.text="Addr:Hausnummer" delete_if_empty="true" />
+  <space/>
+  <text key="start_date" text="start date" de.text="Gründungsjahr/Zeitpunkt" delete_if_empty="true" />
+  <combo key="fee"  text="is a fee charged?" de.text="Kostet die Nutzung etwas? (optional)" values="yes,no" delete_if_empty="true" />
+  <combo key="access"  text="access (simple)" de.text="Zugang Öffentlich oder Privat?" values="public,private" delete_if_empty="true" />
+  <space/>
+  <combo key="wheelchair"  text="wheelchair (simple)" de.text="Rollstuhlgeeignet?" values="yes,limited,no,designated" delete_if_empty="true" />
+  <combo key="smoking"  text="smoking" de.text="Rauchen erlaubt?" values="yes,no,isolated,separated" de.display_values="Ja,Nein,Gut getrennt,Schlecht getrennt" delete_if_empty="true" />
+  <combo key="smoking:outside"  text="smoking outside" de.text="Rauchen draußen erlaubt?" values="yes,no" de.display_values="Ja,Nein" delete_if_empty="true" />
+  <combo key="internet_access"  text="is there Internet access" de.text="Gibt es dort Internetzugang?"  delete_if_empty="true" />
+  <combo key="internet_access:fee"  text="fee for Internet access?" de.text="Internetzugang kostenlos?"  delete_if_empty="true" />
+</item>
+<separator/>
+             <item name="Needs fullfilled by a community" de.name="Bedürfnisse" type="node,way,relation,closedway" >
   <space/>
 	<label text="Needs fullfilled by a community:" de.text="Bedürfnisse:" />
     <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Needs_fullfilled_by_a_community" />
@@ -59,7 +77,7 @@
   <check key="fullfills_needs:community"  text="provides: community" de.text="Bietet: Gemeinschaft" />
   <check key="fullfills_needs:participation"  text="provides: participation" de.text="Bietet: Mitmachmöglichkeit" />
 </item>
-<item name="Self-description of a community" de.name="Selbstbeschreibung/Zugehörigkeit" type="node,way,relation" >
+<item name="Self-description of a community" de.name="Selbstbeschreibung/Zugehörigkeit" type="node,way,relation,closedway" >
 	<label text="Self-description of a community" de.text="Selbstbeschreibung/Zugehörigkeit" />
     <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Self-description_of_a_community" />
   <space />
@@ -76,7 +94,7 @@
   <check key="political_identity:ecovillage"  text="Global Ecovillage Network" de.text="Global Ecovillage Network" />
 </item>
 
-<item name="Mode of Interaction" de.name="Art der Interaktion" type="node,way,relation" >
+<item name="Mode of Interaction" de.name="Art der Interaktion" type="node,way,relation,closedway" >
 	<label text="Mode of Interaction" de.text="Art der Interaktion" />
     <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Interaction" />
   <space />
@@ -90,7 +108,7 @@
   <check key="mode_of_interaction:donations"  text="by way of donations" de.text="freiwillige Spende" />
 </item>
 
-<item name="Mode of Production" de.name="Art der Produktion" type="node,way,relation" >
+<item name="Mode of Production" de.name="Art der Produktion" type="node,way,relation,closedway" >
 	<label text="Mode of Production" de.text="Art der Produktion" />
     <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Production" />
   <space />
@@ -102,7 +120,7 @@
   <check key="mode_of_production:solidarity_cooperative_production"  text="fair-production" de.text="faire Produktion" />
 </item>
 
-<item name="Knowledge and Resource Management" type="node,way,relation" >
+<item name="Knowledge and Resource Management" type="node,way,relation,closedway" >
 	<label text="Knowledge and Resource Management" />
     <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Knowledge_and_Resource_Management" />
   <space />
@@ -142,7 +160,7 @@
   
 </item>
 
-<item name="Mode of Organization" de.name="Organisationsform" type="node,way,relation" >
+<item name="Mode of Organization" de.name="Organisationsform" type="node,way,relation,closedway" >
 	<label text="Mode of Organization" de.text="Organisationsform" />
     <link text="OSM-Wiki with long descriptions" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Organization" />
   <space />
@@ -160,7 +178,7 @@
 
 </item>
 <separator/>
-<item name="Contact data" de.name="Kontaktdaten" type="node,way,relation" >
+<item name="Contact data" de.name="Kontaktdaten" type="node,way,relation,closedway" >
 	<label text="Contact data" de.text="Kontaktdaten" />
   <space />
   <text key="contact:name" text="Name of contact persion"  de.text="Name der Kontaktperson"  delete_if_empty="true" />
