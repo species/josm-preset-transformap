@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.8" 
+		 version="0.9" 
 		 shortdescription="Preset for project Transformap" 
 		 de.shortdescription="Eingabemasken für Projekt Transformap" 
 		 description="Presets covering all the proposed tags for project Transformap" 
@@ -40,7 +40,7 @@
   <optional>
   <text key="start_date" text="start date" de.text="Gründungsjahr/Zeitpunkt" delete_if_empty="true" />
   <combo key="fee"  text="is a fee charged?" de.text="Kostet die Nutzung etwas?" values="yes,no" de.display_values="Ja,Nein" delete_if_empty="true" />
-  <combo key="access"  text="access (simple)" de.text="Öffentlich oder nur für Mitglieder?" values="public,private" de.display_values="Öffentlich,nur für Mitglieder" display_values="public, members only" delete_if_empty="true" />
+  <combo key="access"  text="access (simple)" de.text="Öffentlich oder nur für Mitglieder?" values="public,private" de.display_values="Öffentlich,nur für Mitglieder" display_values="public,members only" delete_if_empty="true" />
   <space/>
   <combo key="wheelchair"  text="wheelchair (simple)" de.text="Rollstuhlgeeignet?" values="yes,limited,no,designated" de.display_values="Ja,Eingeschränkt,Nein,Hauptzielgruppe Rollis" delete_if_empty="true"  />
   <text key="wheelchair:description" text="additional description for wheelchair" de.text="Zusatzbeschreibung für Rollstuhlfahrer" delete_if_empty="true" />
