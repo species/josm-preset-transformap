@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.9" 
+		 version="0.10" 
 		 shortdescription="Preset for project Transformap" 
 		 de.shortdescription="Eingabemasken für Projekt Transformap" 
 		 description="Presets covering all the proposed tags for project Transformap" 
@@ -52,6 +52,8 @@
   <combo key="internet_access:fee"  text="fee for Internet access?" de.text="Internetzugang kostenlos?" values="yes,no" de.display_values="Ja,Nein"  delete_if_empty="true" />
   <space/>
         <combo key="organic" text="organic" de.text="Angebot Biologisch" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+  <space/>
+        <check key="indoor" text="Indoor" de.text="Standort innerhalb eines Gebäudes" values="yes,no"  delete_if_empty="true"  /> 
   <space/>
   </optional>
 
