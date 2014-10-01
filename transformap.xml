@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.7" 
+		 version="0.8" 
 		 shortdescription="Preset for project Transformap" 
 		 de.shortdescription="Eingabemasken für Projekt Transformap" 
 		 description="Presets covering all the proposed tags for project Transformap" 
@@ -32,15 +32,15 @@
 	<label text="opening hours: please use Plugin Menu Data → Edit Opening Hours" de.text="Für Öffnungszeiten bitte das Plugin im Menü Daten → Öffnungszeiten verwenden!" />
   <space/>
   <text key="addr:country" text="addr:country" de.text="Adresse:Staatenkürzel" delete_if_empty="true" />
-  <text key="addr:postcode" text="addr:postcode" de.text="Adresse:PLZ" delete_if_empty="true" />
+  <text key="addr:postcode" text="addr:postcode" de.text="Adresse:Postleitzahl" delete_if_empty="true" />
   <text key="addr:city" text="addr:city" de.text="Adresse:Stadt" delete_if_empty="true" />
-  <text key="addr:street" text="addr:street" de.text="Adresse:Strasse" delete_if_empty="true" />
+  <text key="addr:street" text="addr:street" de.text="Adresse:Straße" delete_if_empty="true" />
   <text key="addr:housenumber" text="addr:housenumber" de.text="Adresse:Hausnummer" delete_if_empty="true" />
   <space/>
   <optional>
   <text key="start_date" text="start date" de.text="Gründungsjahr/Zeitpunkt" delete_if_empty="true" />
   <combo key="fee"  text="is a fee charged?" de.text="Kostet die Nutzung etwas?" values="yes,no" de.display_values="Ja,Nein" delete_if_empty="true" />
-  <combo key="access"  text="access (simple)" de.text="Zugang Öffentlich oder Privat?" values="public,private" de.display_values="Öffentlich,Privat" delete_if_empty="true" />
+  <combo key="access"  text="access (simple)" de.text="Öffentlich oder nur für Mitglieder?" values="public,private" de.display_values="Öffentlich,nur für Mitglieder" display_values="public, members only" delete_if_empty="true" />
   <space/>
   <combo key="wheelchair"  text="wheelchair (simple)" de.text="Rollstuhlgeeignet?" values="yes,limited,no,designated" de.display_values="Ja,Eingeschränkt,Nein,Hauptzielgruppe Rollis" delete_if_empty="true"  />
   <text key="wheelchair:description" text="additional description for wheelchair" de.text="Zusatzbeschreibung für Rollstuhlfahrer" delete_if_empty="true" />
@@ -60,9 +60,7 @@
   <reference ref="link_payment_transformap" />
 </item>
 <separator/>
-             <item name="Needs fullfilled by a community" de.name="Bedürfnisse" type="node,way,relation,closedway" >
-  <space/>
-	<label text="Needs fullfilled by a community:" de.text="Bedürfnisse:" />
+             <item name="Needs fullfilled by a community" de.name="Objekt erfüllt folgende Bedürfnisse" type="node,way,relation,closedway" preset_name_label="true" >
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Needs_fullfilled_by_a_community" />
   <space />
 
@@ -102,8 +100,7 @@
   <check key="fullfills_needs:community"  text="provides: community" de.text="Bietet: Gemeinschaft" />
   <check key="fullfills_needs:participation"  text="provides: participation" de.text="Bietet: Mitmachmöglichkeit" />
 </item>
-<item name="Self-description of a community" de.name="Selbstbeschreibung/Zugehörigkeit" type="node,way,relation,closedway" >
-	<label text="Self-description of a community" de.text="Selbstbeschreibung/Zugehörigkeit" />
+<item name="Self-description of a community" de.name="Selbstbeschreibung/Zugehörigkeit" type="node,way,relation,closedway" preset_name_label="true" >
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Self-description_of_a_community" />
   <space />
 
@@ -119,8 +116,7 @@
   <check key="political_identity:ecovillage"  text="Global Ecovillage Network" de.text="Global Ecovillage Network" />
 </item>
 
-<item name="Mode of Interaction" de.name="Art der Interaktion" type="node,way,relation,closedway" >
-	<label text="Mode of Interaction" de.text="Art der Interaktion" />
+<item name="Mode of Interaction" de.name="Art der Interaktion" type="node,way,relation,closedway" preset_name_label="true" >
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Interaction" />
   <space />
 
@@ -133,8 +129,7 @@
   <check key="mode_of_interaction:donations"  text="by way of donations" de.text="freiwillige Spende" />
 </item>
 
-<item name="Mode of Production" de.name="Art der Produktion" type="node,way,relation,closedway" >
-	<label text="Mode of Production" de.text="Art der Produktion" />
+<item name="Mode of Production" de.name="Art der Produktion" type="node,way,relation,closedway" preset_name_label="true" >
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Production" />
   <space />
 
@@ -145,8 +140,7 @@
   <check key="mode_of_production:solidarity_cooperative_production"  text="fair-production" de.text="faire Produktion" />
 </item>
 
-<item name="Knowledge and Resource Management" type="node,way,relation,closedway" >
-	<label text="Knowledge and Resource Management" />
+<item name="Knowledge and Resource Management" type="node,way,relation,closedway" preset_name_label="true" >
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Knowledge_and_Resource_Management" />
   <space />
 	<label text="Knowledge" />
@@ -179,13 +173,12 @@
   <space />
 
   <check key="production_input:work:ilo_standards" text="ILO standards" de.text="ILO Standards" /> 
-  <combo key="production_input:work:payment" values="good,equal,undisclosed" text="payment" de.text="Bezahlung" de.display_values="gleich/gut/nicht transparent" delete_if_empty="true"  />
+  <combo key="production_input:work:payment" values="good,equal,undisclosed" text="payment" de.text="Bezahlung" de.display_values="gleich,gut,nicht transparent" delete_if_empty="true"  />
   <check key="production_input:work:further_training"  text="further training" de.text="Fortbildung" />
   
 </item>
 
-<item name="Mode of Organization" de.name="Organisationsform" type="node,way,relation,closedway" >
-	<label text="Mode of Organization" de.text="Organisationsform" />
+<item name="Mode of Organization" de.name="Organisationsform" type="node,way,relation,closedway" preset_name_label="true" >
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Organization" />
   <space />
 
@@ -203,15 +196,15 @@
 
 <separator/>
 
-<item name="Contact Data" de.name="Kontaktdaten" type="node,way,relation,closedway"  icon="presets/telephone.png">
-	<label text="Contact data" de.text="Kontaktdaten" />
+<item name="Contact Data" de.name="Kontaktdaten" type="node,way,relation,closedway"  icon="presets/telephone.png" preset_name_label="true" >
   <space />
   <text key="website" text="website"  de.text="Webseite"  delete_if_empty="true" />
-  <text key="contact:email" text="email"  de.text="Kontak-E-Mail"  delete_if_empty="true" />
+  <text key="contact:email" text="email"  de.text="Kontakt-E-Mail"  delete_if_empty="true" />
   <space />
   <text key="contact:name" text="Name of contact person"  de.text="Name der Kontaktperson"  delete_if_empty="true" />
-  <text key="contact:phone" text="phone nr."  de.text="Telefonnummer (+49 VORWAHL NUMMER [-durchwahl])"  delete_if_empty="true" />
-  <text key="contact:fax" text="fax nr"  de.text="Faxnummer"  delete_if_empty="true" />
+  <label text="for tel-nrs: +49 PREFIX NUMBER" de.text="Telefonnumernschema: +49 VORWAHL NUMMER[-Durchwahl]" />
+  <text key="contact:phone" text="phone number"  de.text="Telefonnummer"  delete_if_empty="true" />
+  <text key="contact:fax" text="fax number"  de.text="Faxnummer"  delete_if_empty="true" />
   <space />
   <label text="Social media links / usernames" de.text="Soziale Netzwerke" />
   <space />
