@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.6" 
+		 version="0.7" 
 		 shortdescription="Preset for project Transformap" 
 		 de.shortdescription="Eingabemasken für Projekt Transformap" 
 		 description="Presets covering all the proposed tags for project Transformap" 
@@ -21,7 +21,7 @@
          </chunk>
 
          <group name="Transformap" >
-<item name="Common Tags" de.name="Allgemeine Eigenschaften" type="node,way,relation,closedway" >
+             <item name="Common Tags" de.name="Allgemeine Eigenschaften" type="node,way,relation,closedway"  icon="presets/message.png" >
 	<label text="Common tags for all Transformap-objects" de.text="Allgemeine Eigenschaften für alle Transformap-Objekte" />
   <space />
   <text key="name" text="name (required!)" de.text="Name (Pflicht!)" delete_if_empty="true" />
@@ -203,7 +203,7 @@
 
 <separator/>
 
-<item name="Contact Data" de.name="Kontaktdaten" type="node,way,relation,closedway" >
+<item name="Contact Data" de.name="Kontaktdaten" type="node,way,relation,closedway"  icon="presets/telephone.png">
 	<label text="Contact data" de.text="Kontaktdaten" />
   <space />
   <text key="website" text="website"  de.text="Webseite"  delete_if_empty="true" />
@@ -220,7 +220,7 @@
   <text key="contact:google_plus" text="G+-page"  de.text="G+-Page"  delete_if_empty="true" />
 </item>
 
-<item name="Diet options" de.name="Diätologische Merkmale" type="node,way,relation,closedway" preset_name_label="true">
+<item name="Diet options" de.name="Diätologische Merkmale" type="node,way,relation,closedway" preset_name_label="true" icon="presets/apple.png">
     <link href="http://wiki.openstreetmap.org/wiki/Key:diet"
         de.href="http://wiki.openstreetmap.org/wiki/DE:Key:diet:*" 
         text="OSM-Wiki with long descriptions" 
@@ -246,7 +246,7 @@
 </item>
 
 
-<item name="Payment options" de.name="Bezahlmöglichkeiten" type="node,way,relation,closedway" preset_name_label="true">
+<item name="Payment options" de.name="Bezahlmöglichkeiten" type="node,way,relation,closedway" preset_name_label="true" icon="presets/dollar.png">
     <space />
   <check key="payment:bitcoin"  text="Bitcoin" />
   <check key="payment:litecoin"  text="Litecoin" />
