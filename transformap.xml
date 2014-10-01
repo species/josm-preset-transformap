@@ -5,7 +5,7 @@
 		 shortdescription="Preset for project Transformap" 
 		 de.shortdescription="Eingabemasken für Projekt Transformap" 
 		 description="Presets covering all the proposed tags for project Transformap" 
-         de.description="Eingabemasken von Vorgeschlagenen Tags für das Projekt Transformap"
+         de.description="Eingabemasken von vorgeschlagenen Tags für das Projekt Transformap"
          url="http://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap">
 
          <chunk id="link_contact_transformap">
