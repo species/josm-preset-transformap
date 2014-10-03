@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.10.1" 
+		 version="0.11" 
 		 shortdescription="Preset for project Transformap" 
 		 de.shortdescription="Eingabemasken für Projekt Transformap" 
 		 description="Presets covering all the proposed tags for project Transformap" 
@@ -114,7 +114,7 @@
   <check key="political_identity:commons"  text="Commons" de.text="Commons" />
   <check key="political_identity:economy_for_the_common_good"  text="Economy of the Common Good" de.text="Gemeinwohlökonomie" />
   <check key="political_identity:p2p_economy"  text="P2P economy" de.text="P2P Ökonomie" />
-  <check key="political_identity:collaborative_economy"  text="collaborative economy" de.text="" />
+  <check key="political_identity:collaborative_economy"  text="collaborative economy" de.text="Kollaborative Ökonomie" />
   <check key="political_identity:ecovillage"  text="Global Ecovillage Network" de.text="Global Ecovillage Network" />
 </item>
 
@@ -185,13 +185,12 @@
   <space />
 
   <text key="mode_of_organization:ownership_structure" text="mode of ownership (free text)" de.text="Eigentümerstruktur (Freitext)" delete_if_empty="true" />
-  <combo key="mode_of_organization:purpose" text="for profit or for benefit" de.text="Gewinn oder Gemeinwohl" values="non_profit,not_for_private_profit,for_members" delete_if_empty="true" /> 
+  <combo key="mode_of_organization:purpose" text="for profit or for benefit" de.text="Gewinn oder Gemeinwohl" values="non_profit,not_for_private_profit,for_members" de.display_values="frei von Gewinninteressen,frei von privaten Gewinninteressen,Gewinn kommt Mitgliedern zugute" delete_if_empty="true" /> 
   <check key="mode_of_organization:self_managed"  text="self managed" de.text="selbstverwaltet" />
   <combo key="mode_of_organization:decision_making" text="decision making" de.text="Entscheidungsfindung" values="by_consensus,by_vote,..." delete_if_empty="true" /> 
   <combo key="mode_of_organization:members" text="membership" de.text="Mitgliedschaft" values="users,producers,suppliers,affected,open,closed,others" de.display_values="Nutzer,Produzenten,Zulieferer,Betroffene,offen,geschlossen,andere" delete_if_empty="true" /> 
-  <combo key="mode_of_organization:hierarchy_chef" text="hierarchy" de.text="Hierarchie" values="no,yes,elected,flat_hierarchy,others" delete_if_empty="true" /> 
-  <combo key="mode_of_organization:size" text="size" de.text="Größe" values="by_members_participants,by_users,others" delete_if_empty="true" /> 
-  <combo key="mode_of_organization:scale_of_activity" text="scale of activity" de.text="Reichweite" values="local,regional,national,binational,multinational,global" delete_if_empty="true" /> 
+  <combo key="mode_of_organization:hierarchy_chef" text="hierarchy" de.text="Hierarchie" values="no,yes,elected,flat_hierarchy,others" de.display_values="Nein,Ja,gewählt,flache Hierarchy" delete_if_empty="true" /> 
+  <combo key="mode_of_organization:scale_of_activity" text="scale of activity" de.text="Reichweite" values="local,regional,national,binational,multinational,global" de.display_values="Lokal,Regional,National,Binational,Multinational,Global" delete_if_empty="true" /> 
   <label text="mode_of_organization:transparency - FIXME key/values to refine" />
 
 </item>
