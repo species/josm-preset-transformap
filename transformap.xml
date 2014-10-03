@@ -49,7 +49,7 @@
   <combo key="smoking:outside"  text="smoking outside" de.text="Rauchen draußen erlaubt?" values="yes,no" de.display_values="Ja,Nein" delete_if_empty="true" />
   <space/>
   <combo key="internet_access"  text="is there Internet access" de.text="Gibt es dort Internetzugang?" values="yes,no,wlan,terminal,wired" de.display_values="Ja,Nein,WLAN,Kiosk,LAN-Anschlüsse" delete_if_empty="true"  />
-  <combo key="internet_access:fee"  text="fee for Internet access?" de.text="Internetzugang kostenlos?" values="yes,no" de.display_values="Ja,Nein"  delete_if_empty="true" />
+  <combo key="internet_access:fee"  text="fee for Internet access?" de.text="Internetzugang kostenlos?" values="yes,no" de.display_values="Nein,Ja"  delete_if_empty="true" />
   <space/>
         <combo key="organic" text="organic" de.text="Angebot Biologisch" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
   <space/>
