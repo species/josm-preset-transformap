@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.12" 
-		 shortdescription="Preset for project Transformap" 
-		 de.shortdescription="Eingabemasken für Projekt Transformap" 
+		 version="0.13" 
+		 shortdescription="Transformap Tag-Presets" 
+		 de.shortdescription="Transformap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project Transformap" 
          de.description="Eingabemasken von vorgeschlagenen Tags für das Projekt Transformap"
          url="http://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap">
@@ -62,11 +62,11 @@
   <reference ref="link_payment_transformap" />
 </item>
 <separator/>
-             <item name="Needs fullfilled by a community" de.name="Objekt erfüllt folgende Bedürfnisse" type="node,way,relation,closedway" preset_name_label="true" >
-    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Needs_fullfilled_by_a_community" />
+             <item name="Needs fulfilled by a community" de.name="Objekt erfüllt folgende Bedürfnisse" type="node,way,relation,closedway" preset_name_label="true" >
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Needs_fulfilled_by_a_community" />
   <space />
 
-                 <!-- fullfills_needs: all yes/no \land
+                 <!-- fulfils_needs: all yes/no \land
                  food
                  beverages
                  land=rural/urban/rurban
@@ -85,22 +85,22 @@
                  participation
                  
                  -->
-  <check key="fullfills_needs:food"  text="provides: food" de.text="Bietet: Essen" />
-  <check key="fullfills_needs:beverages"  text="provides: beverages" de.text="Bietet: Getränke" />
-  <combo key="fullfills_needs:land"  text="provides: land" de.text="Bietet: Land" values="rural,urban,rurban,no" delete_if_empty="true" />
-  <check key="fullfills_needs:mobility"  text="provides: mobility" de.text="Bietet: Mobilität" />
-  <check key="fullfills_needs:health"  text="provides: health" de.text="Bietet: Gesundheit" />
-  <check key="fullfills_needs:culture"  text="provides: culture" de.text="Bietet: Kultur" />
-  <check key="fullfills_needs:sense_of_security"  text="provides: safety" de.text="Bietet: Schutz" />
-  <check key="fullfills_needs:housing"  text="provides: housing" de.text="Bietet: Unterkunft" />
-  <check key="fullfills_needs:spaces"  text="provides: space" de.text="Bietet: Freiraum" />
-  <check key="fullfills_needs:objects_of_utility"  text="provides: objects of utility" de.text="Bietet: Gebrauchsgegenstände" />
-  <check key="fullfills_needs:clothes"  text="provides: clothes" de.text="Bietet: Kleidung" />
-  <check key="fullfills_needs:knowledge"  text="provides: knowledge" de.text="Bietet: Wissen" />
-  <check key="fullfills_needs:skills"  text="provides: skills" de.text="Bietet: Können" />
-  <check key="fullfills_needs:energy"  text="provides: energy" de.text="Bietet: Energie" />
-  <check key="fullfills_needs:community"  text="provides: community" de.text="Bietet: Gemeinschaft" />
-  <check key="fullfills_needs:participation"  text="provides: participation" de.text="Bietet: Mitmachmöglichkeit" />
+  <check key="fulfils_needs:food"  text="provides: food" de.text="Bietet: Essen" />
+  <check key="fulfils_needs:beverages"  text="provides: beverages" de.text="Bietet: Getränke" />
+  <combo key="fulfils_needs:land"  text="provides: land" de.text="Bietet: Land" values="rural,urban,rurban,no" delete_if_empty="true" />
+  <check key="fulfils_needs:mobility"  text="provides: mobility" de.text="Bietet: Mobilität" />
+  <check key="fulfils_needs:health"  text="provides: health" de.text="Bietet: Gesundheit" />
+  <check key="fulfils_needs:culture"  text="provides: culture" de.text="Bietet: Kultur" />
+  <check key="fulfils_needs:sense_of_security"  text="provides: safety" de.text="Bietet: Schutz" />
+  <check key="fulfils_needs:housing"  text="provides: housing" de.text="Bietet: Unterkunft" />
+  <check key="fulfils_needs:spaces"  text="provides: space" de.text="Bietet: Freiraum" />
+  <check key="fulfils_needs:objects_of_utility"  text="provides: objects of utility" de.text="Bietet: Gebrauchsgegenstände" />
+  <check key="fulfils_needs:clothes"  text="provides: clothes" de.text="Bietet: Kleidung" />
+  <check key="fulfils_needs:knowledge"  text="provides: knowledge" de.text="Bietet: Wissen" />
+  <check key="fulfils_needs:skills"  text="provides: skills" de.text="Bietet: Können" />
+  <check key="fulfils_needs:energy"  text="provides: energy" de.text="Bietet: Energie" />
+  <check key="fulfils_needs:community"  text="provides: community" de.text="Bietet: Gemeinschaft" />
+  <check key="fulfils_needs:participation"  text="provides: participation" de.text="Bietet: Mitmachmöglichkeit" />
 </item>
 <item name="Self-description of a community" de.name="Selbstbeschreibung/Zugehörigkeit" type="node,way,relation,closedway" preset_name_label="true" >
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Self-description_of_a_community" />
