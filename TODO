@@ -1,0 +1,41 @@
+a system to generate this presets out from a database / csv
+    the following data has to be used:
+        * group: 
+            item $name ($de.name, $xx.name), 
+            $link ($xx.link)
+        * item: 
+            $type (check,combo,text,multiselect,key) 
+            $key, 
+            $text (xx.text) , 
+            $values, 
+            $display_values ($xx.display_values), (en wird zum default)
+        * delete_if_empty immer true
+        * check: disable_off="true" immer setzen
+
+
+wie die meta/direct sache taggen?
+
+folgende möglichkeiten
+  Begriffe: yes/direct meta/indirect
+
+    change the yes-value to yes/meta/yes_and_meta/yes;meta - or use 'direct' instead of 'yes'
+        fulfils_needs:land=yes/meta
+            yes;meta -NOK derzeit nicht aufgrund JOSM-Bug
+        fulfils_needs:land:scope=rural/urban/rurban
+
+    add an additional tag: fulfils_needs:food:how = direct / indirect / direct_and_indirect
+        zusatztags san net gscheit, da zum beschreiben einer eigenschaft dann zwei tags gebraucht werden!
+
+    fulfils_needs:direct=food;health & fulfils_needs:meta=mobility;air
+        -NOK derzeit nicht aufgrund JOSM-Bug
+    oder
+        fulfils_needs=*
+
+
+    Examples direct
+        restaurant
+        drinking_water
+    Examples indirect
+        verein der Freunde der Tram Graz
+        P2P foundation
+        Mietshäuser Syndikat?
