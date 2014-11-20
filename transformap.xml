@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.13" 
-		 shortdescription="Transformap Tag-Presets" 
-		 de.shortdescription="Transformap Eingabemasken" 
-		 description="Presets covering all the proposed tags for project Transformap" 
-         de.description="Eingabemasken von vorgeschlagenen Tags für das Projekt Transformap"
+		 version="0.14" 
+		 shortdescription="TransforMap Tag-Presets" 
+		 de.shortdescription="TransforMap Eingabemasken" 
+		 description="Presets covering all the proposed tags for project TransforMap" 
+         de.description="Eingabemasken von vorgeschlagenen Tags für das Projekt TransforMap"
          url="http://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap">
 
          <chunk id="link_contact_transformap">
@@ -20,9 +20,9 @@
              <preset_link preset_name="Payment options" />
          </chunk>
 
-         <group name="Transformap" >
+         <group name="TransforMap" >
              <item name="Common Tags" de.name="Allgemeine Eigenschaften" type="node,way,relation,closedway"  icon="presets/message.png" >
-	<label text="Common tags for all Transformap-objects" de.text="Allgemeine Eigenschaften für alle Transformap-Objekte" />
+	<label text="Common tags for all TransforMap-objects" de.text="Allgemeine Eigenschaften für alle TransforMap-Objekte" />
   <space />
   <text key="name" text="name (required!)" de.text="Name (Pflicht!)" delete_if_empty="true" />
   <text key="description" text="description (optional)" de.text="Beschreibung (optional)" delete_if_empty="true" />
