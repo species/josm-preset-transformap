@@ -250,6 +250,7 @@
   <check key="payment:none"  text="no payment required" de.text="Leistung Gratis" />
   <space />
 
+  <text key="payment:regional"  text="Regional Currencies (Free Text, separate with “;”)" de.text="Regionalwährungen (Freitext, trenne mit „;“)" delete_if_empty="true"/>
   <check key="payment:cash"  text="Cash" de.text="Bargeld" />
   <check key="payment:debit_cards"  text="Debit cards" de.text="Bankomatkarten" />
   <check key="payment:credit_cards"  text="Credit cards" de.text="Kreditkarten" />
