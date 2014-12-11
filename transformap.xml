@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.14" 
+		 version="0.15" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -31,7 +31,7 @@
   <space/>
 	<label text="opening hours: please use Plugin Menu Data → Edit Opening Hours" de.text="Für Öffnungszeiten bitte das Plugin im Menü Daten → Öffnungszeiten verwenden!" />
   <space/>
-  <text key="addr:country" text="addr:country" de.text="Adresse:Staatenkürzel" delete_if_empty="true" />
+  <text key="addr:country" text="addr:country (2-letter-code, e.g. IT)" de.text="Adresse:Staat (2-Zeichen-Code, zB DE)" delete_if_empty="true" />
   <text key="addr:postcode" text="addr:postcode" de.text="Adresse:Postleitzahl" delete_if_empty="true" />
   <text key="addr:city" text="addr:city" de.text="Adresse:Stadt" delete_if_empty="true" />
   <text key="addr:street" text="addr:street" de.text="Adresse:Straße" delete_if_empty="true" />
