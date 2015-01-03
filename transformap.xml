@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.16" 
+		 version="0.17" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
          de.description="Eingabemasken von vorgeschlagenen Tags für das Projekt TransforMap"
-         url="http://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap">
+         url="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap">
 
          <chunk id="link_contact_transformap">
              <preset_link preset_name="Contact Data" />
@@ -64,7 +64,7 @@
 </item>
 <separator/>
              <item name="Needs fulfilled by a community" de.name="Objekt erfüllt folgende Bedürfnisse" type="node,way,relation,closedway" preset_name_label="true" >
-    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Needs_fulfilled_by_a_community" />
+                 <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Needs_fulfilled_by_a_community" />
   <space />
 
                  <!-- fulfils_needs: all yes/no \land
@@ -104,7 +104,7 @@
   <check key="fulfils_needs:participation"  text="provides: participation" de.text="Bietet: Mitmachmöglichkeit" />
 </item>
 <item name="Self-description of a community" de.name="Selbstbeschreibung/Zugehörigkeit" type="node,way,relation,closedway" preset_name_label="true" >
-    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Self-description_of_a_community" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Self-description_of_a_community" />
   <space />
 
   <check key="political_identity:solidarity_economy"  text="solidarity economy" de.text="Solidarische Ökonomie" />
@@ -120,7 +120,7 @@
 </item>
 
 <item name="Mode of Interaction" de.name="Art der Interaktion" type="node,way,relation,closedway" preset_name_label="true" >
-    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Interaction" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Mode_of_Interaction" />
   <space />
 
   <check key="mode_of_interaction:bartering"  text="by way of bartering" de.text="tauschen" />
@@ -133,7 +133,7 @@
 </item>
 
 <item name="Mode of Production" de.name="Art der Produktion" type="node,way,relation,closedway" preset_name_label="true" >
-    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Production" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Mode_of_Production" />
   <space />
 
   <check key="mode_of_production:commons_based_p2p_production"  text="P2P" de.text="P2P" />
@@ -144,7 +144,7 @@
 </item>
 
 <item name="Knowledge and Resource Management" type="node,way,relation,closedway" preset_name_label="true" >
-    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Knowledge_and_Resource_Management" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Knowledge_and_Resource_Management" />
   <space />
 	<label text="Knowledge" />
   <space />
@@ -182,17 +182,17 @@
 </item>
 
 <item name="Mode of Organization" de.name="Organisationsform" type="node,way,relation,closedway" preset_name_label="true" >
-    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/User:KartenKarsten/futureMap#Mode_of_Organization" />
+    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Mode_of_Organization" />
   <space />
 
-  <text key="mode_of_organization:ownership_structure" text="mode of ownership (free text)" de.text="Eigentümerstruktur (Freitext)" delete_if_empty="true" />
-  <combo key="mode_of_organization:purpose" text="for profit or for benefit" de.text="Gewinn oder Gemeinwohl" values="non_profit,not_for_private_profit,for_members" de.display_values="frei von Gewinninteressen,frei von privaten Gewinninteressen,Gewinn kommt Mitgliedern zugute" delete_if_empty="true" /> 
-  <check key="mode_of_organization:self_managed"  text="self managed" de.text="selbstverwaltet" />
-  <combo key="mode_of_organization:decision_making" text="decision making" de.text="Entscheidungsfindung" values="by_consensus,by_vote,..." delete_if_empty="true" /> 
-  <combo key="mode_of_organization:members" text="membership" de.text="Mitgliedschaft" values="users,producers,suppliers,affected,open,closed,others" de.display_values="Nutzer,Produzenten,Zulieferer,Betroffene,offen,geschlossen,andere" delete_if_empty="true" /> 
-  <combo key="mode_of_organization:hierarchy_chef" text="hierarchy" de.text="Hierarchie" values="no,yes,elected,flat_hierarchy,others" de.display_values="Nein,Ja,gewählt,flache Hierarchy" delete_if_empty="true" /> 
-  <combo key="mode_of_organization:scale_of_activity" text="scale of activity" de.text="Reichweite" values="local,regional,national,binational,multinational,global" de.display_values="Lokal,Regional,National,Binational,Multinational,Global" delete_if_empty="true" /> 
-  <label text="mode_of_organization:transparency - FIXME key/values to refine" />
+  <text key="mode_of_organisation:ownership_structure" text="mode of ownership (free text)" de.text="Eigentümerstruktur (Freitext)" delete_if_empty="true" />
+  <combo key="mode_of_organisation:purpose" text="for profit or for benefit" de.text="Gewinn oder Gemeinwohl" values="non_profit,not_for_private_profit,for_members" de.display_values="frei von Gewinninteressen,frei von privaten Gewinninteressen,Gewinn kommt Mitgliedern zugute" delete_if_empty="true" /> 
+  <check key="mode_of_organisation:self_managed"  text="self managed" de.text="selbstverwaltet" />
+  <combo key="mode_of_organisation:decision_making" text="decision making" de.text="Entscheidungsfindung" values="by_consensus,by_vote,..." delete_if_empty="true" /> 
+  <combo key="mode_of_organisation:members" text="membership" de.text="Mitgliedschaft" values="users,producers,suppliers,affected,open,closed,others" de.display_values="Nutzer,Produzenten,Zulieferer,Betroffene,offen,geschlossen,andere" delete_if_empty="true" /> 
+  <combo key="mode_of_organisation:hierarchy_chef" text="hierarchy" de.text="Hierarchie" values="no,yes,elected,flat_hierarchy,others" de.display_values="Nein,Ja,gewählt,flache Hierarchy" delete_if_empty="true" /> 
+  <combo key="mode_of_organisation:scale_of_activity" text="scale of activity" de.text="Reichweite" values="local,regional,national,binational,multinational,global" de.display_values="Lokal,Regional,National,Binational,Multinational,Global" delete_if_empty="true" /> 
+  <label text="mode_of_organisation:transparency - FIXME key/values to refine" />
 
 </item>
 
