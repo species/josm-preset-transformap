@@ -134,17 +134,7 @@
 
 </item>
 
-<item name="Mode of Production" de.name="Art der Produktion" type="node,way,relation,closedway" preset_name_label="true" >
-    <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Mode_of_Production" />
-  <space />
-
-  <check key="mode_of_production:commons_based_p2p_production"  text="P2P" de.text="P2P" />
-  <check key="mode_of_production:dit_and_diy"  text="diy&amp;dit" de.text="diy&amp;dit" />
-  <check key="mode_of_production:commoning"  text="Commoning" de.text="gemeinschaffen" />
-  <check key="mode_of_production:open_manufacturing"  text="Open Manufacturing" de.text="Open Manufacturing" />
-  <check key="mode_of_production:solidarity_cooperative_production"  text="fair-production" de.text="faire Produktion" />
-</item>
-
+         <group name="Solidary Economy Tags" de.name="Tags für die Solidarische Ökonomie" >
 <item name="Knowledge and Resource Management" type="node,way,relation,closedway" preset_name_label="true" >
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Knowledge_and_Resource_Management" />
   <space />
@@ -197,6 +187,7 @@
   <label text="mode_of_organisation:transparency - FIXME key/values to refine" />
 
 </item>
+</group>
 
 <separator/>
 
