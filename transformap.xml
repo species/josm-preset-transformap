@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.20" 
+		 version="0.24" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -67,45 +67,69 @@
                  <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Needs_fulfilled_by_a_community" />
   <space />
 
-                 <!-- fulfils_needs: all yes/no \land
-                 food
-                 beverages
-                 land=rural/urban/rurban
-                 mobility
-                 health
-                 culture
-                 safety
-                 housing
-                 spaces
-                 objects_of_utilty
-                 clothes
-                 knowledge
-                 skills
-                 energy
-                 community
-                 participation
-                 
-                 -->
-  <check key="fulfils_needs:food"  text="provides: food" de.text="Bietet: Essen" />
-  <check key="fulfils_needs:beverages"  text="provides: beverages" de.text="Bietet: Getränke" />
-  <combo key="fulfils_needs:land"  text="provides: land" de.text="Bietet: Land" values="rural,urban,rurban,no" delete_if_empty="true" />
-  <check key="fulfils_needs:mobility"  text="provides: mobility" de.text="Bietet: Mobilität" />
-  <check key="fulfils_needs:health"  text="provides: health" de.text="Bietet: Gesundheit" />
-  <check key="fulfils_needs:culture"  text="provides: culture" de.text="Bietet: Kultur" />
-  <check key="fulfils_needs:safety"  text="provides: safety" de.text="Bietet: Schutz" />
-  <check key="fulfils_needs:housing"  text="provides: housing" de.text="Bietet: Unterkunft" />
-  <check key="fulfils_needs:spaces"  text="provides: space" de.text="Bietet: Freiraum" />
-  <check key="fulfils_needs:objects_of_utility"  text="provides: objects of utility" de.text="Bietet: Gebrauchsgegenstände" />
-  <check key="fulfils_needs:clothes"  text="provides: clothes" de.text="Bietet: Kleidung" />
-  <check key="fulfils_needs:knowledge"  text="provides: knowledge" de.text="Bietet: Wissen" />
-  <check key="fulfils_needs:skills"  text="provides: skills" de.text="Bietet: Können" />
-  <check key="fulfils_needs:energy"  text="provides: energy" de.text="Bietet: Energie" />
-  <check key="fulfils_needs:community"  text="provides: community" de.text="Bietet: Gemeinschaft" />
-  <check key="fulfils_needs:participation"  text="provides: participation" de.text="Bietet: Mitmachmöglichkeit" />
+  <label text="You can choose more than one entry! (hold CTRL)" de.text="Mehrfache Auswahl möglich! (STRG gedrückt halten)"/>
+  <space />
+  <label text="for POIs fulfilling a need on site:" de.text="Für an diesem Ort direkt erfüllt Bedürfnisse"/>
+  <multiselect key="provides" rows="16" text="Needs fulfilled directly here" de.text="Direkt erfüllte Bedürfnisse">
+    <list_entry value="food+drink"  display_value="provides: food+beverages" de.display_value="Bietet: Essen &amp; Trinken" />
+    <list_entry value="water"  display_value="provides: water" de.display_value="Bietet: Trinkwasser" />
+    <list_entry value="mobility"  display_value="provides: mobility" de.display_value="Bietet: Mobilität" />
+    <list_entry value="health"  display_value="provides: health" de.display_value="Bietet: Gesundheit" />
+    <list_entry value="culture"  display_value="provides: culture" de.display_value="Bietet: Kultur" />
+    <list_entry value="safety"  display_value="provides: safety" de.display_value="Bietet: Schutz" />
+    <list_entry value="housing"  display_value="provides: housing" de.display_value="Bietet: Unterkunft" />
+    <list_entry value="spaces"  display_value="provides: space" de.display_value="Bietet: Freiraum" />
+    <list_entry value="objects_of_utility"  display_value="provides: objects of utility" de.display_value="Bietet: Gebrauchsgegenstände" />
+    <list_entry value="clothes"  display_value="provides: clothes" de.display_value="Bietet: Kleidung" />
+    <list_entry value="learning_opportunities"  display_value="provides: knowledge &amp; skills" de.display_value="Bietet: Wissen" />
+    <list_entry value="energy"  display_value="provides: energy" de.display_value="Bietet: Energie" />
+    <list_entry value="community"  display_value="provides: community" de.display_value="Bietet: Gemeinschaft" />
+    <list_entry value="participation"  display_value="provides: participation" de.display_value="Bietet: Mitmachmöglichkeit" />
+    <list_entry value="spirituality"  display_value="provides: spirituality" de.display_value="Bietet: Spiritualität" />
+    <list_entry value="land"  display_value="provides: land" de.display_value="Bietet: Land" />
+  </multiselect>
+  <combo key="provides:land"  text="type of land" de.text="Land: Typ" values="rural,urban,rurban" delete_if_empty="true" />
+
+  <space />
+
+  <label text="If an organisation (club, foundation etc) cares about a need indirectly, choose its topics here:" de.text="Für Organisationen, die sich indirekt um Bedürfnisse kümmern, wähle deren Themen hier:" />
+  <multiselect key="topic" rows="16" text="cares about:" de.text="kümmert sich um:">
+    <list_entry value="food+drink"  display_value="topic: food&amp;beverages" de.display_value="Essen &amp; Getränke" />
+    <list_entry value="beverages"  display_value="topic: beverages" de.display_value="Getränke" />
+    <list_entry value="mobility"  display_value="topic: mobility" de.display_value="Mobilität" />
+    <list_entry value="health"  display_value="topic: health" de.display_value="Gesundheit" />
+    <list_entry value="culture"  display_value="topic: culture" de.display_value="Kultur" />
+    <list_entry value="safety"  display_value="topic: safety" de.display_value="Schutz" />
+    <list_entry value="housing"  display_value="topic: housing" de.display_value="Unterkunft" />
+    <list_entry value="spaces"  display_value="topic: space" de.display_value="Freiraum" />
+    <list_entry value="objects_of_utility"  display_value="topic: objects of utility" de.display_value="Gebrauchsgegenstände" />
+    <list_entry value="clothes"  display_value="topic: clothes" de.display_value="Kleidung" />
+    <list_entry value="learning_opportunities"  display_value="topic: knowledge &amp; skills" de.display_value="Wissen" />
+    <list_entry value="energy"  display_value="topic: energy" de.display_value="Energie" />
+    <list_entry value="community"  display_value="topic: community" de.display_value="Gemeinschaft" />
+    <list_entry value="participation"  display_value="topic: participation" de.display_value="Mitmachmöglichkeit" />
+    <list_entry value="spirituality"  display_value="topic: spirituality" de.display_value="Spiritualität" />
+    <list_entry value="land"  display_value="topic: land" de.display_value="Land" />
+  </multiselect>
+  <combo key="topic:land"  text="type of land" de.text="Land: Typ" values="rural,urban,rurban" delete_if_empty="true" />
+
 </item>
 <item name="Self-description of a community" de.name="Selbstbeschreibung/Zugehörigkeit" type="node,way,relation,closedway" preset_name_label="true" >
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Self-description_of_a_community" />
   <space />
+  <label text="You can choose more than one entry! (hold CTRL)" de.text="Mehrfache Auswahl möglich! (STRG gedrückt halten)"/>
+  <multiselect key="identity" rows="11" text="Identity" de.text="Identität">
+	  <list_entry value="solidarity_economy" display_value="solidarity economy" de.display_value="Solidarische Ökonomie" short_description="" />
+	  <list_entry value="transition_initiative" display_value="Transition Town Initative" de.display_value="Transition Town Initiativen" short_description="" />
+    <list_entry value="subsistance_economy"  display_value="subsistence economy" de.display_value="Subsistenzökonomie" />
+    <list_entry value="permaculture"  display_value="permaculture" de.display_value="Permakultur" />
+    <list_entry value="alternatives_to_the_cash_economy"  display_value="alternatives to chash economy" de.display_value="Alternativen zur Geldökonomie" />
+    <list_entry value="commons"  display_value="Commons" de.display_value="Commons" />
+    <list_entry value="economy_for_the_common_good"  display_value="Economy of the Common Good" de.display_value="Gemeinwohlökonomie" />
+    <list_entry value="p2p_economy"  display_value="P2P economy" de.display_value="P2P Ökonomie" />
+    <list_entry value="collaborative_economy"  display_value="collaborative economy" de.display_value="Kollaborative Ökonomie" />
+    <list_entry value="ecovillage"  display_value="Global Ecovillage Network" de.display_value="Global Ecovillage Network" />
+  </multiselect>
 
   <check key="political_identity:solidarity_economy"  text="solidarity economy" de.text="Solidarische Ökonomie" />
   <check key="political_identity:transition_initiative"  text="Transition Town Initative" de.text="Transition Town Initiativen" />
@@ -123,14 +147,17 @@
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Mode_of_Interaction" />
   <space />
 
-  <check key="mode_of_interaction:bartering"  text="by way of bartering" de.text="tauschen" />
-  <check key="mode_of_interaction:lending"  text="by way of lending" de.text="verleihen" />
-  <check key="mode_of_interaction:renting"  text="by way of renting" de.text="mieten" />
-  <check key="mode_of_interaction:gifting"  text="by way of gifting" de.text="verschenken" />
-  <check key="mode_of_interaction:rebuying_reselling"  text="by way of rebuying &amp; reselling" de.text="weiter(ver)kaufen" />
-  <check key="mode_of_interaction:cousing"  text="by way of co-using" de.text="Gemeinsam Nutzen" />
-  <check key="mode_of_interaction:diy_and_dit"  text="Do It Yourself &amp; Together" de.text="Selbermachen" />
-  <check key="mode_of_interaction:buy_and_sell"  text="buy &amp; sell" de.text="kaufen und verkaufen" />
+  <label text="You can choose more than one entry! (hold CTRL)" de.text="Mehrfache Auswahl möglich! (STRG gedrückt halten)"/>
+  <multiselect key="interaction" rows="11" text="Mode of interaction" de.text="Art der Interaktion">
+    <list_entry value="bartering"  display_value="by way of bartering" de.display_value="tauschen" />
+    <list_entry value="lending"  display_value="by way of lending" de.display_value="verleihen" />
+    <list_entry value="renting"  display_value="by way of renting" de.display_value="mieten" />
+    <list_entry value="gifting"  display_value="by way of gifting" de.display_value="verschenken" />
+    <list_entry value="rebuying_reselling"  display_value="by way of rebuying &amp; reselling" de.display_value="weiter(ver)kaufen" />
+    <list_entry value="cousing"  display_value="by way of co-using" de.display_value="Gemeinsam Nutzen" />
+    <list_entry value="diy_and_dit"  display_value="Do It Yourself &amp; Together" de.display_value="Selbermachen" />
+    <list_entry value="buy_and_sell"  display_value="buy &amp; sell" de.display_value="kaufen und verkaufen" />
+  </multiselect>
 
 </item>
 
