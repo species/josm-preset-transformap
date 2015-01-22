@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.24" 
+		 version="0.25" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -123,7 +123,7 @@
 	  <list_entry value="transition_initiative" display_value="Transition Town Initative" de.display_value="Transition Town Initiativen" short_description="" />
     <list_entry value="subsistance_economy"  display_value="subsistence economy" de.display_value="Subsistenzökonomie" />
     <list_entry value="permaculture"  display_value="permaculture" de.display_value="Permakultur" />
-    <list_entry value="alternatives_to_the_cash_economy"  display_value="alternatives to chash economy" de.display_value="Alternativen zur Geldökonomie" />
+    <list_entry value="alternatives_to_the_cash_economy"  display_value="alternatives to cash economy" de.display_value="Alternativen zur Geldökonomie" />
     <list_entry value="commons"  display_value="Commons" de.display_value="Commons" />
     <list_entry value="economy_for_the_common_good"  display_value="Economy of the Common Good" de.display_value="Gemeinwohlökonomie" />
     <list_entry value="p2p_economy"  display_value="P2P economy" de.display_value="P2P Ökonomie" />
@@ -135,7 +135,7 @@
   <check key="political_identity:transition_initiative"  text="Transition Town Initative" de.text="Transition Town Initiativen" />
   <check key="political_identity:subsistance_economy"  text="subsistence economy" de.text="Subsistenzökonomie" />
   <check key="political_identity:permaculture"  text="permaculture" de.text="Permakultur" />
-  <check key="political_identity:alternatives_to_the_cash_economy"  text="alternatives to chash economy" de.text="Alternativen zur Geldökonomie" />
+  <check key="political_identity:alternatives_to_the_cash_economy"  text="alternatives to cash economy" de.text="Alternativen zur Geldökonomie" />
   <check key="political_identity:commons"  text="Commons" de.text="Commons" />
   <check key="political_identity:economy_for_the_common_good"  text="Economy of the Common Good" de.text="Gemeinwohlökonomie" />
   <check key="political_identity:p2p_economy"  text="P2P economy" de.text="P2P Ökonomie" />
