@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.25" 
+		 version="0.26" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -131,16 +131,6 @@
     <list_entry value="ecovillage"  display_value="Global Ecovillage Network" de.display_value="Global Ecovillage Network" />
   </multiselect>
 
-  <check key="political_identity:solidarity_economy"  text="solidarity economy" de.text="Solidarische Ökonomie" />
-  <check key="political_identity:transition_initiative"  text="Transition Town Initative" de.text="Transition Town Initiativen" />
-  <check key="political_identity:subsistance_economy"  text="subsistence economy" de.text="Subsistenzökonomie" />
-  <check key="political_identity:permaculture"  text="permaculture" de.text="Permakultur" />
-  <check key="political_identity:alternatives_to_the_cash_economy"  text="alternatives to cash economy" de.text="Alternativen zur Geldökonomie" />
-  <check key="political_identity:commons"  text="Commons" de.text="Commons" />
-  <check key="political_identity:economy_for_the_common_good"  text="Economy of the Common Good" de.text="Gemeinwohlökonomie" />
-  <check key="political_identity:p2p_economy"  text="P2P economy" de.text="P2P Ökonomie" />
-  <check key="political_identity:collaborative_economy"  text="collaborative economy" de.text="Kollaborative Ökonomie" />
-  <check key="political_identity:ecovillage"  text="Global Ecovillage Network" de.text="Global Ecovillage Network" />
 </item>
 
 <item name="Mode of Interaction" de.name="Art der Interaktion" type="node,way,relation,closedway" preset_name_label="true" >
