@@ -121,16 +121,18 @@
   <multiselect key="identity" rows="11" text="Identity" de.text="Identität">
 	  <list_entry value="solidarity_economy" display_value="solidarity economy" de.display_value="Solidarische Ökonomie" short_description="" />
 	  <list_entry value="transition_initiative" display_value="Transition Town Initative" de.display_value="Transition Town Initiativen" short_description="" />
-    <list_entry value="subsistance_economy"  display_value="subsistence economy" de.display_value="Subsistenzökonomie" />
     <list_entry value="permaculture"  display_value="permaculture" de.display_value="Permakultur" />
-    <list_entry value="alternatives_to_the_cash_economy"  display_value="alternatives to cash economy" de.display_value="Alternativen zur Geldökonomie" />
+    <list_entry value="demonetized_economy"  display_value="demonetized economy" de.display_value="Alternativen zur Geldökonomie" />
     <list_entry value="commons"  display_value="Commons" de.display_value="Commons" />
     <list_entry value="economy_for_the_common_good"  display_value="Economy of the Common Good" de.display_value="Gemeinwohlökonomie" />
-    <list_entry value="p2p_economy"  display_value="P2P economy" de.display_value="P2P Ökonomie" />
     <list_entry value="collaborative_economy"  display_value="collaborative economy" de.display_value="Kollaborative Ökonomie" />
     <list_entry value="ecovillage"  display_value="Global Ecovillage Network" de.display_value="Global Ecovillage Network" />
+    <list_entry value="p2p_economy"  display_value="P2P economy" de.display_value="P2P Ökonomie" />
+    <list_entry value="subsistance_economy"  display_value="subsistence economy" de.display_value="Subsistenzökonomie" />
   </multiselect>
 
+  <label text="For alternative currencies see Payment:" de.text="Für alternative Währungen siehe:"/>
+  <reference ref="link_payment_transformap" />
 </item>
 
 <item name="Mode of Interaction" de.name="Art der Interaktion" type="node,way,relation,closedway" preset_name_label="true" >
