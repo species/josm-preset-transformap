@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.27" 
+		 version="0.28" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -148,7 +148,7 @@
     <list_entry value="rebuying_reselling"  display_value="by way of rebuying &amp; reselling" de.display_value="weiter(ver)kaufen" />
     <list_entry value="cousing"  display_value="by way of co-using" de.display_value="Gemeinsam Nutzen" />
     <list_entry value="diy_and_dit"  display_value="Do It Yourself &amp; Together" de.display_value="Selbermachen" />
-    <list_entry value="buy_and_sell"  display_value="buy &amp; sell" de.display_value="kaufen und verkaufen" />
+    <list_entry value="buying_and_selling"  display_value="buy &amp; sell" de.display_value="kaufen und verkaufen" />
   </multiselect>
 
 </item>
