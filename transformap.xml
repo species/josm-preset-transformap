@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.29" 
+		 version="0.30" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -118,13 +118,14 @@
     <link text="OSM-Wiki with long descriptions" de.text="Genaue Beschreibung im OSM-Wiki" href="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap#Self-description_of_a_community" />
   <space />
   <label text="You can choose more than one entry! (hold CTRL)" de.text="Mehrfache Auswahl möglich! (STRG gedrückt halten)"/>
-  <label text="Items tagged &quot;Draft&quot; are not part of Taxonomy 1.0" de.text="Einträge mit &quot;Vorschlag&quot; sind in der Taxonomie 1.0 noch nicht enthalten"/>
-  <multiselect key="identity" rows="11" text="Identity" de.text="Identität">
-	  <list_entry value="solidarity_economy" display_value="solidarity economy" de.display_value="Solidarische Ökonomie" short_description="" />
-	  <list_entry value="transition_initiative" display_value="Transition Town Initative" de.display_value="Transition Town Initiativen" short_description="" />
+  <space />
+  <label text="Items tagged &quot;Draft&quot; are not part of Taxonomy 1.0" de.text="Einträge mit &quot;Vorschlag&quot; sind in der Taxonomie 1.0 noch nicht enthalten."/>
+  <multiselect key="identity" rows="13" text="Identity" de.text="Identität">
+	  <list_entry value="solidarity_economy" display_value="solidarity economy" de.display_value="Solidarische Ökonomie"/>
+	  <list_entry value="transition_initiative" display_value="Transition Town Initative" de.display_value="Transition Town Initiativen" />
     <list_entry value="permaculture"  display_value="permaculture" de.display_value="Permakultur" />
     <list_entry value="demonetized_economy"  display_value="demonetized economy" de.display_value="Alternativen zur Geldökonomie" />
-    <list_entry value="community_based_currencies"  display_value="community based currencies" de.display_value="Community-Basierte Währungen" />
+    <list_entry value="community_based_currencies"  display_value="managing community based currencies" de.display_value="Management Community-Basierter Währungen" />
     <list_entry value="commons"  display_value="Commons" de.display_value="Commons" />
     <list_entry value="economy_for_the_common_good"  display_value="Economy of the Common Good" de.display_value="Gemeinwohlökonomie" />
     <list_entry value="collaborative_economy"  display_value="collaborative economy" de.display_value="Kollaborative Ökonomie" />
@@ -134,7 +135,8 @@
     <list_entry value="ecovillage"  display_value="Single Ecovillage (Draft)" de.display_value="Einzelnes Ecovillage (Vorschlag)" />
   </multiselect>
 
-  <label text="For alternative currencies see Payment:" de.text="Für alternative Währungen siehe:"/>
+  <space />
+  <label text="For alternative currencies see Payment:" de.text="Für Bezahlmöglichkeiten mit alternativen Währungen siehe:"/>
   <reference ref="link_payment_transformap" />
 </item>
 
