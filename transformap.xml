@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.30" 
+		 version="0.31" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -131,7 +131,7 @@
     <list_entry value="collaborative_economy"  display_value="collaborative economy" de.display_value="Kollaborative Ökonomie" />
     <list_entry value="global_ecovillage_network"  display_value="Member of Global Ecovillage Network" de.display_value="Mitglied im Global Ecovillage Network" />
     <list_entry value="p2p_economy"  display_value="P2P economy (Draft)" de.display_value="P2P Ökonomie (Vorschlag)" />
-    <list_entry value="subsistance_economy"  display_value="subsistence economy (Draft)" de.display_value="Subsistenzökonomie (Vorschlag)" />
+    <list_entry value="subsistence_economy"  display_value="subsistence economy (Draft)" de.display_value="Subsistenzökonomie (Vorschlag)" />
     <list_entry value="ecovillage"  display_value="Single Ecovillage (Draft)" de.display_value="Einzelnes Ecovillage (Vorschlag)" />
   </multiselect>
 
