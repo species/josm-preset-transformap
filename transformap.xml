@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.34" 
+		 version="0.35" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -71,8 +71,10 @@
 
   <label text="You can choose more than one entry! (hold CTRL)" de.text="Mehrfache Auswahl möglich! (STRG gedrückt halten)"/>
   <space />
+  <label text="Items tagged &quot;Draft&quot; are not part of Taxonomy 1.0" de.text="Einträge mit &quot;Vorschlag&quot; sind in der Taxonomie 1.0 noch nicht enthalten."/>
+  <space />
   <label text="for POIs fulfilling a need on site:" de.text="Für an diesem Ort direkt erfüllt Bedürfnisse"/>
-  <multiselect key="provides" rows="16" text="Needs fulfilled directly here" de.text="Direkt erfüllte Bedürfnisse">
+  <multiselect key="provides" rows="18" text="Needs fulfilled directly here" de.text="Direkt erfüllte Bedürfnisse">
     <list_entry value="food+drink"  display_value="provides: food+beverages" de.display_value="Bietet: Essen &amp; Trinken" />
     <list_entry value="water"  display_value="provides: water" de.display_value="Bietet: Trinkwasser" />
     <list_entry value="mobility"  display_value="provides: mobility" de.display_value="Bietet: Mobilität" />
@@ -88,14 +90,15 @@
     <list_entry value="community"  display_value="provides: community" de.display_value="Bietet: Gemeinschaft" />
     <list_entry value="participation"  display_value="provides: participation" de.display_value="Bietet: Mitmachmöglichkeit" />
     <list_entry value="spirituality"  display_value="provides: spirituality" de.display_value="Bietet: Spiritualität" />
-    <list_entry value="land"  display_value="provides: land" de.display_value="Bietet: Land" />
+    <list_entry value="telecommunication"  display_value="provides: telecommunication (Draft)" de.display_value="Bietet: Kommunikations-Einrichtungen (Vorschlag)" />
+    <list_entry value="air"  display_value="provides: breathing air (Draft)" de.display_value="Bietet: Atemluft (Vorschlag)" />
   </multiselect>
   <combo key="provides:land"  text="type of land" de.text="Land: Typ" values="rural,urban,rurban" delete_if_empty="true" />
 
   <space />
 
   <label text="If an organisation (club, foundation etc) cares about a need indirectly, choose its topics here:" de.text="Für Organisationen, die sich indirekt um Bedürfnisse kümmern, wähle deren Themen hier:" />
-  <multiselect key="topic" rows="16" text="cares about:" de.text="kümmert sich um:">
+  <multiselect key="topic" rows="18" text="cares about:" de.text="kümmert sich um:">
     <list_entry value="food+drink"  display_value="topic: food&amp;beverages" de.display_value="Essen &amp; Getränke" />
     <list_entry value="beverages"  display_value="topic: beverages" de.display_value="Getränke" />
     <list_entry value="mobility"  display_value="topic: mobility" de.display_value="Mobilität" />
@@ -112,6 +115,8 @@
     <list_entry value="participation"  display_value="topic: participation" de.display_value="Mitmachmöglichkeit" />
     <list_entry value="spirituality"  display_value="topic: spirituality" de.display_value="Spiritualität" />
     <list_entry value="land"  display_value="topic: land" de.display_value="Land" />
+    <list_entry value="telecommunication"  display_value="topic: telecommunication (Draft)" de.display_value="Kommunikations-Einrichtungen (Vorschlag)" />
+    <list_entry value="air"  display_value="topic: breathing air (Draft)" de.display_value="Atemluft (Vorschlag)" />
   </multiselect>
   <combo key="topic:land"  text="type of land" de.text="Land: Typ" values="rural,urban,rurban" delete_if_empty="true" />
 
