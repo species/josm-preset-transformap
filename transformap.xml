@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.32" 
+		 version="0.33" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -219,7 +219,7 @@
 
 <item name="Contact Data" de.name="Kontaktdaten" type="node,way,relation,closedway"  icon="presets/telephone.png" preset_name_label="true" >
   <space />
-  <text key="website" text="website"  de.text="Webseite"  delete_if_empty="true" />
+  <text key="contact:website" text="website"  de.text="Webseite"  delete_if_empty="true" />
   <text key="contact:email" text="email"  de.text="Kontakt-E-Mail"  delete_if_empty="true" />
   <space />
   <text key="contact:name" text="Name of contact person"  de.text="Name der Kontaktperson"  delete_if_empty="true" />
