@@ -117,6 +117,7 @@
     <list_entry value="land"  display_value="topic: land" de.display_value="Land" />
     <list_entry value="telecommunication"  display_value="topic: telecommunication (Draft)" de.display_value="Kommunikations-Einrichtungen (Vorschlag)" />
     <list_entry value="air"  display_value="topic: breathing air (Draft)" de.display_value="Atemluft (Vorschlag)" />
+    <list_entry value="environment"  display_value="topic: environmentalism (Draft)" de.display_value="Umweltschutz (Vorschlag)" />
   </multiselect>
   <combo key="topic:land"  text="type of land" de.text="Land: Typ" values="rural,urban,rurban" delete_if_empty="true" />
 
