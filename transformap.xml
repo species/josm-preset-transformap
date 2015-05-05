@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.35" 
+		 version="0.36" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
