@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.36" 
+		 version="0.37" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -73,7 +73,7 @@
   <space />
   <label text="Items tagged &quot;Draft&quot; are not part of Taxonomy 1.0" de.text="Einträge mit &quot;Vorschlag&quot; sind in der Taxonomie 1.0 noch nicht enthalten."/>
   <space />
-  <label text="for POIs fulfilling a need on site:" de.text="Für an diesem Ort direkt erfüllt Bedürfnisse"/>
+  <label text="for POIs fulfilling a need on site:" de.text="Für an diesem Ort direkt erfüllt Bedürfnisse:"/>
   <multiselect key="provides" rows="18" text="Needs fulfilled directly here" de.text="Direkt erfüllte Bedürfnisse">
     <list_entry value="food+drink"  display_value="provides: food+beverages" de.display_value="Bietet: Essen &amp; Trinken" />
     <list_entry value="water"  display_value="provides: water" de.display_value="Bietet: Trinkwasser" />
@@ -98,7 +98,7 @@
   <space />
 
   <label text="If an organisation (club, foundation etc) cares about a need indirectly, choose its topics here:" de.text="Für Organisationen, die sich indirekt um Bedürfnisse kümmern, wähle deren Themen hier:" />
-  <multiselect key="topic" rows="18" text="cares about:" de.text="kümmert sich um:">
+  <multiselect key="topic" rows="18" text="cares about" de.text="kümmert sich um">
     <list_entry value="food+drink"  display_value="topic: food&amp;beverages" de.display_value="Essen &amp; Getränke" />
     <list_entry value="beverages"  display_value="topic: beverages" de.display_value="Getränke" />
     <list_entry value="mobility"  display_value="topic: mobility" de.display_value="Mobilität" />
@@ -156,6 +156,7 @@
   <label text="You can choose more than one entry! (hold CTRL)" de.text="Mehrfache Auswahl möglich! (STRG gedrückt halten)"/>
   <multiselect key="interaction" rows="11" text="Mode of interaction" de.text="Art der Interaktion">
     <list_entry value="bartering"  display_value="by way of bartering" de.display_value="tauschen" />
+    <list_entry value="sharing"  display_value="by way of sharing" de.display_value="teilen (sharing)" />
     <list_entry value="lending"  display_value="by way of lending" de.display_value="verleihen" />
     <list_entry value="renting"  display_value="by way of renting" de.display_value="mieten" />
     <list_entry value="gifting"  display_value="by way of gifting" de.display_value="verschenken" />
