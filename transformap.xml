@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 		 author="Michael Maier (species@osm)" 
-		 version="0.37" 
+		 version="0.38" 
 		 shortdescription="TransforMap Tag-Presets" 
 		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
@@ -55,6 +55,7 @@
         <combo key="organic" text="organic" de.text="Angebot Biologisch" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
         <combo key="regional" text="regional" de.text="Angebot Regional" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
         <combo key="fair_trade" text="fair-trade" de.text="Angebot Fair-Trade" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
+        <combo key="bulk_purchase" text="bulk goods" de.text="Unverpackte Waren (nicht nur Obst!)" values="yes,no,only" de.display_values="Ja,Nein,Ausschließlich" delete_if_empty="true"  /> 
   <space/>
         <check key="indoor" text="Indoor" de.text="Standort innerhalb eines Gebäudes" values="yes,no"  delete_if_empty="true"  /> 
   <space/>
