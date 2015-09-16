@@ -101,7 +101,7 @@
   <label text="If an organisation (club, foundation etc) cares about a need indirectly, choose its topics here:" de.text="Für Organisationen, die sich indirekt um Bedürfnisse kümmern, wähle deren Themen hier:" />
   <multiselect key="topic" rows="18" text="cares about" de.text="kümmert sich um">
     <list_entry value="food+drink"  display_value="topic: food&amp;beverages" de.display_value="Essen &amp; Getränke" />
-    <list_entry value="beverages"  display_value="topic: beverages" de.display_value="Getränke" />
+    <list_entry value="water"  display_value="topic: water" de.display_value="Wasser" />
     <list_entry value="mobility"  display_value="topic: mobility" de.display_value="Mobilität" />
     <list_entry value="health"  display_value="topic: health" de.display_value="Gesundheit" />
     <list_entry value="culture"  display_value="topic: culture" de.display_value="Kultur" />
