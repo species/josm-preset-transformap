@@ -3,7 +3,7 @@
 		 author="Michael Maier (species@osm)" 
 		 version="0.41"
 		 shortdescription="TransforMap Tag-Presets" 
-		 de.shortdescription="TransforMap Eingabemasken" 
+		 de.shortdescription="TransforMap Eingabemasken" do
 		 description="Presets covering all the proposed tags for project TransforMap" 
          de.description="Eingabemasken von vorgeschlagenen Tags für das Projekt TransforMap"
          url="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap">
@@ -269,7 +269,7 @@
 </item>
 
 
-<item name="Payment options" de.name="Bezahlmöglichkeiten" type="node,way,relation,closedway" preset_name_label="true" icon="presets/dollar.png">
+<item name="Payment options" de.name="Bezahlmöglichkeiten" type="node,way,relation,closedway" preset_name_label="true" icon="styles/standard/money/dollar.svg">
     <space />
   <check key="payment:bitcoin"  text="Bitcoin" />
   <check key="payment:litecoin"  text="Litecoin" />
