@@ -3,7 +3,7 @@
 		 author="Michael Maier (species@osm)" 
 		 version="0.41"
 		 shortdescription="TransforMap Tag-Presets" 
-		 de.shortdescription="TransforMap Eingabemasken"
+		 de.shortdescription="TransforMap Eingabemasken" 
 		 description="Presets covering all the proposed tags for project TransforMap" 
          de.description="Eingabemasken von vorgeschlagenen Tags für das Projekt TransforMap"
          url="https://wiki.openstreetmap.org/wiki/Proposed_features/TransforMap">
