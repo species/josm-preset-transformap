@@ -269,7 +269,7 @@
 </item>
 
 
-<item name="Payment options" de.name="Bezahlmöglichkeiten" type="node,way,relation,closedway" preset_name_label="true" icon="presets/dollar.png">
+<item name="Payment options" de.name="Bezahlmöglichkeiten" type="node,way,relation,closedway" preset_name_label="true" icon="styles/standard/money/dollar.svg">
     <space />
   <check key="payment:bitcoin"  text="Bitcoin" />
   <check key="payment:litecoin"  text="Litecoin" />
