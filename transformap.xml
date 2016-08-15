@@ -21,7 +21,7 @@
          </chunk>
 
          <group name="TransforMap" >
-             <item name="Common Tags" de.name="Allgemeine Eigenschaften" type="node,way,relation,closedway"  icon="presets/misc/message.png" >
+             <item name="Common Tags" de.name="Allgemeine Eigenschaften" type="node,way,relation,closedway"  icon="presets/misc/name.svg" >
 	<label text="Common tags for all TransforMap-objects" de.text="Allgemeine Eigenschaften für alle TransforMap-Objekte" />
   <space />
   <text key="name" text="name (required!)" de.text="Name (Pflicht!)" delete_if_empty="true" />
@@ -243,7 +243,7 @@
   <text key="contact:google_plus" text="G+-page"  de.text="G+-Page"  delete_if_empty="true" />
 </item>
 
-<item name="Diet options" de.name="Diätologische Merkmale" type="node,way,relation,closedway" preset_name_label="true" icon="presets/shop/groceries/apple.png">
+<item name="Diet options" de.name="Diätologische Merkmale" type="node,way,relation,closedway" preset_name_label="true" icon="presets/shop/groceries/farm.svg">
     <link href="http://wiki.openstreetmap.org/wiki/Key:diet"
         de.href="http://wiki.openstreetmap.org/wiki/DE:Key:diet:*" 
         text="OSM-Wiki with long descriptions" 
