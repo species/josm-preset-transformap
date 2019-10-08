@@ -244,8 +244,8 @@
 </item>
 
 <item name="Diet options" de.name="Diätologische Merkmale" type="node,way,relation,closedway" preset_name_label="true" icon="presets/shop/groceries/farm.svg">
-    <link href="http://wiki.openstreetmap.org/wiki/Key:diet"
-        de.href="http://wiki.openstreetmap.org/wiki/DE:Key:diet:*" 
+    <link href="https://wiki.openstreetmap.org/wiki/Key:diet"
+        de.href="https://wiki.openstreetmap.org/wiki/DE:Key:diet:*" 
         text="OSM-Wiki with long descriptions" 
         de.text="Genaue Beschreibung im OSM-Wiki" />
   <space />
@@ -287,8 +287,8 @@
 
 
   <label text="For further possibilities, see" de.text="Für weitere Möglichkeiten, siehe" />
-    <link href="http://wiki.openstreetmap.org/wiki/Key:payment"
-        de.href="http://wiki.openstreetmap.org/wiki/DE:Key:payment" 
+    <link href="https://wiki.openstreetmap.org/wiki/Key:payment"
+        de.href="https://wiki.openstreetmap.org/wiki/DE:Key:payment" 
         text="OSM-Wiki with long descriptions" 
         de.text="Beschreibung im OSM-Wiki" />
 </item>
