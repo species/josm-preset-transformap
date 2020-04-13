@@ -217,7 +217,7 @@
   <check key="mode_of_organisation:self_managed"  text="self managed" de.text="selbstverwaltet" />
   <combo key="mode_of_organisation:decision_making" text="decision making" de.text="Entscheidungsfindung" values="by_consensus,by_vote,..." delete_if_empty="true" /> 
   <combo key="mode_of_organisation:members" text="membership" de.text="Mitgliedschaft" values="users,producers,suppliers,affected,open,closed,others" de.display_values="Nutzer,Produzenten,Zulieferer,Betroffene,offen,geschlossen,andere" delete_if_empty="true" /> 
-  <combo key="mode_of_organisation:hierarchy_chef" text="hierarchy" de.text="Hierarchie" values="no,yes,elected,flat_hierarchy,others" de.display_values="Nein,Ja,gewählt,flache Hierarchy" delete_if_empty="true" /> 
+  <combo key="mode_of_organisation:hierarchy_chef" text="hierarchy" de.text="Hierarchie" values="no,yes,elected,flat_hierarchy,others" de.display_values="Nein,Ja,gewählt,flache Hierarchie,andere" delete_if_empty="true" /> 
   <combo key="mode_of_organisation:scale_of_activity" text="scale of activity" de.text="Reichweite" values="local,regional,national,binational,multinational,global" de.display_values="Lokal,Regional,National,Binational,Multinational,Global" delete_if_empty="true" /> 
   <label text="mode_of_organisation:transparency - FIXME key/values to refine" />
 
